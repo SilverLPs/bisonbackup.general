@@ -11,12 +11,8 @@ done
 
 echo "MODULE INFO:"
 echo
-echo "Name:        command"
-echo "Package:     bisonbackup.general"
+echo "Module:      bisonbackup.general.command"
 echo "Path:        $(pwd)"
-echo "Shell:       $SHELL"
-echo "Time:        $(date +\%Y\%m\%d)-$(date +\%H\%M\%S)"
-echo "User:        $(whoami)"
 echo "COMMAND:     $VAR_COMMAND"
 echo
 $VAR_COMMAND
