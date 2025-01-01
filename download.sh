@@ -25,3 +25,7 @@ cp -rv "$VAR_SOURCE" "$VAR_DESTINATION"
 if [ $? -eq 0 ]; then
     echo "Seems like the copy $VAR_DESTINATION was successfully created (Exit code 0)"
 fi
+
+
+#download (ftp/http, files and directories)
+#-NEXT MODULES: Git (clone with all commits), BorgBackup
