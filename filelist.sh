@@ -6,11 +6,11 @@ VAR_FILEPATH=""
 for arg in "$@"; do
   case $arg in
     SOURCE=*)
-      VAR_SOURCE="$(realpath ${arg#*=})"
+      VAR_SOURCE="$(realpath "${arg#*=}")"
       shift
       ;;
     DESTINATION=*)
-      VAR_DESTINATION="$(realpath ${arg#*=})"
+      VAR_DESTINATION="$(realpath "${arg#*=}")"
       shift
       ;;
     TIMEINNAME=*)

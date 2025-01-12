@@ -3,7 +3,7 @@ VAR_SCRIPT=""
 for arg in "$@"; do
   case $arg in
     SCRIPT=*)
-      VAR_SCRIPT="$(realpath ${arg#*=})"
+      VAR_SCRIPT="$(realpath "${arg#*=}")"
       shift
       ;;
     ARGUMENTS=*)

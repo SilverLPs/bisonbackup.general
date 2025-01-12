@@ -4,11 +4,11 @@ VAR_WHITELIST=""
 for arg in "$@"; do
   case $arg in
     DESTINATION=*)
-      VAR_DESTINATION="$(realpath ${arg#*=})"
+      VAR_DESTINATION="$(realpath "${arg#*=}")"
       shift
       ;;
     WHITELIST=*)
-      VAR_WHITELIST="$(realpath ${arg#*=})"
+      VAR_WHITELIST="$(realpath "${arg#*=}")"
       shift
       ;;
   esac
