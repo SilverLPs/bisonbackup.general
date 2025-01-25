@@ -15,41 +15,34 @@ However, please note that these modules have only been tested with the Bash shel
 ## Modules
 Below is a list of all modules currently included in this package, along with their respective parameters:
 
-**command**
-Executes a command via the shell.
+**command** - Executes a command via the shell.
 - COMMAND = The full command (including arguments) to be executed.
 
-**script**
-Executes a specified file via the shell.
+**script** - Executes a specified file via the shell.
 - SCRIPT = Path to the script to be executed.
 - ARGUMENTS = Additional arguments to pass to the script during execution (optional).
 
-**copy**
-Copies a file or directory, including all its contents.
+**copy** - Copies a file or directory, including all its contents.
 - SOURCE = Path to the source file or directory.
 - DESTINATION = Path to the destination file or directory.
 
-**remove**
-Deletes a file or directory, including all its contents.
+**remove** - Deletes a file or directory, including all its contents.
 - DESTINATION = Path to the file or directory to be deleted.
 - WHITELIST = Path to a text file that must include the destination as an absolute path. This is a safety measure to prevent unintended deletions due to potential script errors.
 
-**permissions**
-Modifies UNIX permissions for a file or directory, including all its contents.
+**permissions** - Modifies UNIX permissions for a file or directory, including all its contents.
 - DESTINATION = Path to the file or directory whose permissions will be modified.
 - OWNER = The username to which the ownership of the destination should be assigned (optional).
 - GROUP = The group to which the destination should be assigned (optional).
 - FILE_MASK = Umask specifying the permissions for files within the destination (optional).
 - DIR_MASK = Umask specifying the permissions for directories within the destination (optional).
 
-**archive**
-Archives a file or directory, including all its contents, as a tarball.
+**archive** - Archives a file or directory, including all its contents, as a tarball.
 - SOURCE = Path to the file or directory to be archived.
 - DESTINATION = Path to the resulting archive file.
 - COMPRESS = Specify “yes” to compress the archive with gzip (optional).
 
-**filelist**
-Generates a list of all files and directories, including all subcontents, within a directory.
+**filelist** - Generates a list of all files and directories, including all subcontents, within a directory.
 - SOURCE = Path to the directory to be listed.
 - DESTINATION = Path to the text file where the list will be saved.
 - TIMEINNAME = Specify “yes” to append the current date and time to the filename of the text file (optional).
